@@ -18,7 +18,7 @@ Puis **"OK"**
 
 ![GitHub Logo](https://i.ibb.co/TkHMBtC/3.png)
 
-Ensuite il faut changer le mdp de l'utilisateur admin, pour cela il faut se rendre dans **"Sécurité"** puis **"Connexions"** et clique droit sur **"sa"**   
+Ensuite il faut changer le mdp de l'utilisateur admin, pour cela il faut se rendre dans **"Sécurité"** puis **"Connexions"** et clique droit sur **"sa"** puis **"propriétés"**   
 
 ![GitHub Logo](https://i.ibb.co/KVFKZCS/5.png)
 
@@ -30,7 +30,7 @@ On peut ensuite aller sur la page **"Général"** pour changer le mdp
 
 ![GitHub Logo](https://i.ibb.co/8dH9k6t/6.png)
 
-Vous pourrez normalement vous connecter en utilisant **"Authentification SQL Server"** avec **"sa"** en connexion et votre mdp rentré précédemment  
+Si vous vous déconnectez du serveur et que vous relancez vous pourrez normalement vous connecter en selectionnant **"Authentification SQL Server"** avec **"sa"** en connexion et votre mdp rentré précédemment  
 
 ![GitHub Logo](https://i.ibb.co/mDgvDWJ/8.png)
 ## 3 Configuration du protocole TCP/IP
@@ -102,7 +102,8 @@ Vous devriez avoir deux fichiers et un répertoire :
 
 ![GitHub Logo](https://i.ibb.co/611MC7b/20.png)
 
-Ensuite vous pouvez prendre ce code en remplacant ma config par celle de votre BDD et utilisateur, rentrez votre requête  
+Ensuite vous pouvez prendre ce code en remplacant ma config par celle de votre BDD et utilisateur,
+il faudra aussi que vous rentriez votre requête  
 ```javascript
 var express = require('express');
 var app = express();
@@ -143,7 +144,7 @@ var server = app.listen(5000, function () {
     console.log('Server is running..');
 });
 ```
-Puis il vous suffit de faire _**node app.js**_ dans le terminal (pour ma part c'était server.js) 
+Puis pour lancer votre app il vous suffit de faire _**node app.js**_ dans le terminal (pour ma part c'était server.js) 
 
 ![GitHub Logo](https://i.ibb.co/HD0Qmbj/21.png)
 
